@@ -51,3 +51,50 @@ body{
         display: none;
     }
 }
+
+.client{
+
+    /* width: 320px; */
+    
+    padding: 10px;
+    /* border: 5px solid gray; */
+    background:rgb(207, 233, 233);
+    margin: 20px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.test{
+
+    /* width: 320px; */
+    
+    padding: 10px;
+    /* border: 5px solid gray; */
+    background:rgb(255, 255, 255);
+    margin: 30px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.clientdiv{
+    margin-Top:30px;
+    font-family: Georgia, serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-style: normal;
+    color: #34314B;
+    font-size: 20px;
+    line-height: 34px;
+    padding-left: 15px;
+    
+}
+
+.clients{
+
+    background-image: linear-gradient(#f6f8f9, rgb(255, 255, 255));
+    padding-left: 15px;
+}
+
+.tests{
+
+    background-image: linear-gradient(#cbcecf, rgb(231, 231, 231));
+}
