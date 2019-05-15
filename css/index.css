@@ -15,8 +15,9 @@ body{
 .contacts{
 
     height: 400px;
-    margin-left: 100px;
+    margin-left: 70px;
     margin-top: 100px;
+    width: 100%;
 }
 
 .form{
@@ -132,6 +133,7 @@ body{
 .contact{
 
     background-image: linear-gradient(#cbcecf, rgb(231, 231, 231));
+    width: 100%;
 }
 
 .abc{
