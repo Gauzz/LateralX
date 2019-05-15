@@ -98,3 +98,12 @@ body{
 
     background-image: linear-gradient(#cbcecf, rgb(231, 231, 231));
 }
+
+.centerards{
+    position: absolute;
+  left: 50px;
+  width: calc(100% - 100px);
+  /* border: 1px solid black; */
+  padding: 5px;
+  text-align: center;
+}
