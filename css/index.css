@@ -134,6 +134,7 @@ body{
 
     background-image: linear-gradient(#cbcecf, rgb(231, 231, 231));
     width: 100%;
+    border-radius: 10px;
 }
 
 .centerards{
