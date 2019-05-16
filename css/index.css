@@ -27,6 +27,9 @@ body{
 .intro{
     height: 500px;
     background-image: linear-gradient(to right,rgb(188, 240, 240), rgb(255, 255, 255));
+    width: 100%;
+    
+
 }
 
 .introtext{
