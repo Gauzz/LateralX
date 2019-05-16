@@ -89,6 +89,22 @@ body{
     }
 }
 
+@media(max-width: 575px)
+{
+    .screenshot{
+        position: relative;
+        top: 220px;
+
+    }
+
+    .detail{
+        position: relative;
+        top: -150px;
+
+
+    }
+}
+
 .client{
 
     /* width: 320px; */
