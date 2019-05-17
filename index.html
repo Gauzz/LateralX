@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -17,7 +17,7 @@
 
 <body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <div class="header fixed">
+    <div class="header ">
         <img  src="images/logo.png" height="40px" width="40px" style="margin-Left:20px; margin-Top:10px">
     </div>
  
@@ -420,7 +420,7 @@
                                 <br>
                                 <br>
                                 <br>
-                                <i class="fab fa-facebook icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-twitter icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-instagram icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-linkedin-in icon"></i>
+                                <i class="fab fa-facebook icon" onclick="facebook()" style=" cursor: pointer;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-twitter icon" onclick="twitter()" style=" cursor: pointer;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-instagram icon"  onclick="instagram()" style=" cursor: pointer;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-linkedin-in icon" onclick="linkedin()" style=" cursor: pointer;"></i>
                         </div>
                 </div>
                 <div class="col-lg-6 col-xs-6">
@@ -432,18 +432,18 @@
                                     </div>
                                     <div class="form-group">
                                             <label for="usr">Name:</label>
-                                            <input type="text" class="form-control" id="usr" placeholder="Enter your name" name="username">
+                                            <input type="text" class="form-control" id="usr" placeholder="Enter your name" >
                                     </div>
                                     <div class="form-group">
                                             <label for="email">Email:</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email" >
                                     </div>
                                     <div class="form-group">
                                             <label for="phn">Phone number:</label>
-                                            <input type="number" class="form-control" id="phn" placeholder="Enter your number" name="email">
+                                            <input type="number" class="form-control" id="phn" placeholder="Enter your number" >
                                     </div>
 
-                                          <button type="submit" class="btn btn-primary">Submit</button>
+                                          <button onclick="sendMail();" class="btn btn-primary">Submit</button>
                             </form>
                         </div>
                 </div>
