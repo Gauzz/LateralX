@@ -2,10 +2,49 @@
     /* margin-Left:20px; */
     /* margin-Right:20px; */
     /* margin-Top:10px; */
+    position: fixed;
+    top:0;
+    width:100%;
     height: 60px;
   background-image: linear-gradient(to right,rgb(0, 102, 102), rgb(204, 255, 255));
+  z-index: 1;
 }
+/* .fixed{
+    position: fixed;
+    top:0;
+    width:100%;
+} */
+/* #demo{
+background-color:red;
+} */
 
+.carousel-indicators li{
+
+border-radius: 10px;
+width:12px;
+height:12px;
+background-color: #000000;
+border-top:0px;
+border-bottom:0px;
+}
+/* .carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    /* width:10px;
+    height: 10px; */
+    /* border-radius:5px;
+} */ */
 body{
     /* font-family: 'Amatic SC', cursive;
     font-family: 'Arvo', serif;
@@ -38,10 +77,17 @@ body{
 .form{
     height: 600px;
 }
-
+.demos{
+    /* height: 500px; */
+    background-image: linear-gradient(to right,rgb(188, 240, 240), rgb(255, 255, 255));
+    width: 100%;
+}
 .intro{
     height: 500px;
     background-image: linear-gradient(to right,rgb(188, 240, 240), rgb(255, 255, 255));
+    width: 100%;
+    
+
 }
 
 .introtext{
@@ -101,6 +147,22 @@ body{
     }
 }
 
+@media(max-width: 575px)
+{
+    .screenshot{
+        position: relative;
+        top: 220px;
+
+    }
+
+    .detail{
+        position: relative;
+        top: -150px;
+
+
+    }
+}
+
 .client{
 
     /* width: 320px; */
@@ -149,6 +211,7 @@ body{
 
     background-image: linear-gradient(#cbcecf, rgb(231, 231, 231));
     width: 100%;
+    border-radius: 10px;
 }
 
 .centerards{

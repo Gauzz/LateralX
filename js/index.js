@@ -8,3 +8,13 @@ function myMap() {
 
     marker.setMap(map);
     }
+
+  $(window).on('load',function(){
+    
+     
+      $("#imag").fadeOut(-2000);
+      $("#imag").fadeIn(2000);
+
+    
+  
+    });
