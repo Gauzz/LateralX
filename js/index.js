@@ -16,6 +16,10 @@ function myMap() {
      
       $("#imag").fadeOut(-2000);
       $("#imag").fadeIn(2000);
+      $(".col2").hide();
+      $(".col1").hide();
+      $(".col3").hide();
+      $(".col4").hide();
     });
 
 
@@ -33,6 +37,9 @@ $(window).scroll(function () {
     }
     iScrollPos = iCurScrollPos;
     }
+
+
+
 });
 
 function facebook(){
@@ -48,16 +55,47 @@ function linkedin(){
   window.open("https://www.linkedin.com/company/lateralx/about/");
 }
 
-function sendMail(){
-Email.send({
-  // SecureToken : "4967fd5b-2bfa-4ab0-8cc2-ae2ad665842b",
-  Host : "smtp.zoho.com",
-    Username : "admin@lateralx.com",
-    Password : "Lateralx@12315",
-  To : 'gauravrozatkar@lateralx.com',
-  From : "admin@lateralx.com",
-  Subject : "CONTACT REQUEST FROM USER",
-  Body : "NAME: "+document.getElementById('usr').value+"  Email: "+document.getElementById('email').value+"  MESSAGE: "+document.getElementById('comment').value+"   Phone number:  "+document.getElementById('phn').value+""
-}).then(
-message => alert(message)
-);}
+// function sendMail(){
+// Email.send({
+//   // SecureToken : "4967fd5b-2bfa-4ab0-8cc2-ae2ad665842b",
+//   Host : "smtp.zoho.com",
+//     Username : "admin@lateralx.com",
+//     Password : "Lateralx@12315",
+//   To : 'gauravrozatkar@lateralx.com',
+//   From : "admin@lateralx.com",
+//   Subject : "CONTACT REQUEST FROM USER",
+//   Body : "NAME: "+document.getElementById('usr').value+"  Email: "+document.getElementById('email').value+"  MESSAGE: "+document.getElementById('comment').value+"   Phone number:  "+document.getElementById('phn').value+""
+// }).then(
+// message => alert(message)
+// );}
+
+$(".btn2").click(function(){
+  $(".col1").hide();
+  $(".col2").fadeIn("slow");
+  $(".col3").hide();
+  $(".col4").hide();
+});
+
+
+$(".btn1").click(function(){
+  $(".col1").fadeIn("slow");
+    $(".col2").hide();
+    $(".col3").hide();
+    $(".col4").hide();
+ 
+});
+
+$(".btn3").click(function(){
+  $(".col3").fadeIn("slow");
+  $(".col1").hide();
+  $(".col2").hide();
+  $(".col4").hide();
+});
+
+$(".btn4").click(function(){
+  $(".col4").fadeIn("slow");
+  $(".col2").hide();
+  $(".col3").hide();
+  $(".col1").hide();
+});
+ 

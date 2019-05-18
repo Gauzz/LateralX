@@ -7,7 +7,7 @@
     width:100%;
     height: 60px;
   background-image: linear-gradient(to right,rgb(0, 102, 102), rgb(204, 255, 255));
-  z-index: 1;
+  z-index: 2;
 }
 /* .fixed{
     position: fixed;
@@ -168,7 +168,17 @@ body{
       position: absolute;
     }
   }
+  .port{
 
+    width: 520px;
+    
+    padding: 10px;
+    /* border: 5px solid gray; */
+    background:rgb(207, 233, 233);
+    margin: 20px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .client{
 
     /* width: 320px; */
