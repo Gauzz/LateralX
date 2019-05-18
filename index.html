@@ -449,7 +449,7 @@
                 </div>
                 <div class="col-lg-6 col-xs-6">
                         <div class="form">
-                            <form>
+                            <!-- <form>
                                     <div class="form-group">
                                             <label for="Message">Message:</label>
                                             <textarea class="form-control" rows="5" id="comment" placeholder="Enter your message" name="text"></textarea>
@@ -468,6 +468,17 @@
                                     </div>
 
                                           <button onclick="sendMail();" class="btn btn-primary">Submit</button>
+                            </form> -->
+                            <br>
+
+                            <form method="POST" action="https://formspree.io/admin@lateralx.com">
+                              <b>EMAIL : </b>
+                              <input type="email" name="email" placeholder="Your email" style="width:300px">
+                              <br><br>
+                              <b>MESSAGE :</b>
+                              <textarea name="message" placeholder="Test Message" style="width:360px"></textarea>
+                              <br> <br>
+                              <button type="submit" style="background-color:rgb(153, 189, 223) "><b>SUBMIT</b></button>
                             </form>
                         </div>
                 </div>
